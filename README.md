@@ -1,6 +1,8 @@
 
 O seguinte projeto vai acessar os dados da API "/dadosabertos.almg.gov.br", recuperar alguns dados específicos e usá-los para, em uma view, imprimir as redes sociais mais usadas entre os deputados e em outra para imprimir os 5 deputados que mais reembolsaram dinheiro de verbas em cada mês de 2019. Para o programa funcionar é necessário que você crie algumas tabelas no MySql através dos comandos abaixo ou utilizar o "php artisan migrate" nesse projeto, mas se você usar o artisan migrate você precisa dar uns Alter Table no MySql para permitir que alguns valores que serão recuperados e salvos nas tabelas sejam nulos. 
 
+Nas pastas Controllers, Models, migrations e views estão todos os arquivos que eu criei para o projeto.
+
 Comandos pra gerar o schema e as tabelas: 
 
 CREATE DATABASE `laravel` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
