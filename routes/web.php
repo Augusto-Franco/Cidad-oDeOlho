@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/deputados', 'App\Http\Controllers\ValorController@salvarValor', function () {
     return view('deputados');
 });
 
-Route::get('/redeSociais', 'App\Http\Controllers\RedeSociaisController@index', function () {
+Route::get('/', 'App\Http\Controllers\RedeSociaisController@index', function () {
     return view('redeSociais');
 });
 

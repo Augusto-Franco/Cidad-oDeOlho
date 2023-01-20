@@ -14,7 +14,7 @@ class CreateDeputadosTable extends Migration
     public function up()
     {
         Schema::create('deputados', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->string('id');
             $table->string('nome');
             $table->string('nomeServidor');
             $table->string('partido');
@@ -26,7 +26,6 @@ class CreateDeputadosTable extends Migration
             $table->string('naturalidadeMunicipio');
             $table->string('naturalidadeUf');
             $table->string('dataNascimento');
-            $table->json('redesSociais');
             $table->timestamps();
         });
     }
